@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="src/style.css" />
+        <script type="module" src="src/main.ts"></script>
+        <title>Result Summary</title>
+    </head>
+    <body
+        class="flex h-dvh bg-neutral-pale-blue md:items-center md:justify-center"
+    >
+        <main
+            class="flex flex-col gap-6 bg-white md:max-w-2xl md:flex-row md:gap-0 md:rounded-3xl"
+        >
+            <section
+                class="flex flex-col items-center justify-between gap-5 rounded-b-3xl bg-gradient-to-b from-gradients-light-slate-blue to-gradients-light-royal-blue px-16 pb-10 pt-4 md:w-1/2 md:rounded-3xl md:pt-10"
+            >
+                <h1 class="text-neutral-light-lavender md:text-xl">
+                    Your Result
+                </h1>
+                <div
+                    class="flex size-44 flex-col items-center justify-center gap-2 rounded-full bg-gradient-to-b from-gradients-violet-blue to-gradients-persian-blue md:size-48"
+                >
+                    <p class="text-5xl text-neutral-white">76</p>
+                    <span class="text-sm font-bold text-neutral-light-lavender"
+                        >of 100</span
+                    >
+                </div>
+                <article class="space-y-2 md:space-y-4">
+                    <h2
+                        class="text-center text-2xl text-neutral-pale-blue md:text-3xl"
+                    >
+                        Great
+                    </h2>
+                    <p
+                        class="text-center text-sm text-neutral-light-lavender md:text-base"
+                    >
+                        You scored higher than 65% of the people who have taken
+                        these tests.
+                    </p>
+                </article>
+            </section>
+            <section
+                class="flex flex-1 flex-col gap-6 rounded-r-3xl px-6 pb-8 md:w-1/2 md:py-8"
+            >
+                <h1 class="text-lg font-bold text-neutral-dark-gray-blue">
+                    Summary
+                </h1>
+                <ul class="flex flex-col gap-4"></ul>
+                <button
+                    class="rounded-full bg-neutral-dark-gray-blue from-gradients-light-slate-blue to-gradients-light-royal-blue py-4 text-lg text-neutral-pale-blue transition hover:bg-gradient-to-b"
+                >
+                    Continue
+                </button>
+            </section>
+        </main>
+    </body>
+</html>

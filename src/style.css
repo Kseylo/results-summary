@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.corners {
+    --b: 1px; /* thickness of the border */
+    --c: hsl(0, 100%, 67%); /* color of the border */
+    --w: 10px; /* width of border */
+    position: relative;
+}
+.corners::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--c);
+    padding: 1px;
+    border-radius: 10px;
+    -webkit-mask:
+        linear-gradient(0deg, #000 calc(2 * var(--b)), #0000 0) 50% var(--b) /
+            calc(100% - 2 * var(--w)) 100% repeat-y,
+        linear-gradient(-90deg, #000 calc(2 * var(--b)), #0000 0) var(--b) 50%/100%
+            calc(100% - 2 * var(--w)) repeat-x,
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
