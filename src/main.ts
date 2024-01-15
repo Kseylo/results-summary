@@ -39,3 +39,8 @@ data.forEach((item) => {
     li.appendChild(countParagraph)
     list!.append(li)
 })
+
+window.addEventListener('load', () => {
+    const main = document.querySelector('main')
+    main!.classList.remove('hidden')
+})
